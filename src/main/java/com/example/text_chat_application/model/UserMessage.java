@@ -1,14 +1,18 @@
 package com.example.text_chat_application.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
+import org.hibernate.annotations.UuidGenerator;
 
 import java.time.ZonedDateTime;
+import java.util.UUID;
 
 
 /**
- * Model for User message in chat
- * Implemented id with Long to make message sorting simple
+ * Model for user message in chat
  */
 @Data
 @Entity
@@ -16,9 +20,9 @@ import java.time.ZonedDateTime;
 public class UserMessage {
 
     @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @UuidGenerator(style = UuidGenerator.Style.TIME)
     @Column(name = "id")
-    private Long id;
+    private UUID id;
 
     @Column(name = "time_of_posting")
     private ZonedDateTime time;

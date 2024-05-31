@@ -1,6 +1,9 @@
 package com.example.text_chat_application.model;
 
-import jakarta.persistence.*;
+import jakarta.persistence.Column;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import jakarta.persistence.Table;
 import lombok.Data;
 import org.hibernate.annotations.UuidGenerator;
 

@@ -1,4 +1,5 @@
 package com.example.text_chat_application.model;
+
 import jakarta.persistence.*;
 import lombok.Data;
 

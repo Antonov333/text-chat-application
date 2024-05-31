@@ -1,3 +1,5 @@
 # Text Chat Application
 
-Application is under construction
+Multi-user chat application
+
+**Disclaimer**: _Sorry, application is under construction yet_
